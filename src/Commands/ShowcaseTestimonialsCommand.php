@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Binomedev\ShowcaseTestimonials\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ShowcaseTestimonialsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'showcase-testimonials';
 
     public $description = 'My command';
 

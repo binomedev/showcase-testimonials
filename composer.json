@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "binomdev/showcase-testimonials",
+    "description": "A basic package to manage and showcase testimonials.",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "binomdev",
+        "showcase-testimonials"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/binomdev/showcase-testimonials",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Codrin Axinte",
+            "email": "codrin.axinte@outlook.com",
             "role": "Developer"
         }
     ],
@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Binomdev\\ShowcaseTestimonials\\": "src",
+            "Binomdev\\ShowcaseTestimonials\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Binomdev\\ShowcaseTestimonials\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Binomdev\\ShowcaseTestimonials\\ShowcaseTestimonialsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "ShowcaseTestimonials": "Binomdev\\ShowcaseTestimonials\\ShowcaseTestimonialsFacade"
             }
         }
     },

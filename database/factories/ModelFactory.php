@@ -1,8 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Database\Factories;
-
-use Illuminate\Database\Eloquent\Factories\Factory;
+namespace Binomedev\ShowcaseTestimonials\Database\Factories;
 
 /*
 class ModelFactory extends Factory
