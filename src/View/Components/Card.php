@@ -3,7 +3,6 @@
 
 namespace Binomedev\ShowcaseTestimonials\View\Components;
 
-
 use Binomedev\ShowcaseTestimonials\Models\Testimonial;
 use Illuminate\View\Component;
 
@@ -22,7 +21,6 @@ class Card extends Component
     {
         $this->testimonial = $testimonial;
     }
-
 
     public function render()
     {
