@@ -38,5 +38,4 @@ class Testimonial extends Model
             ? $this->{$field}
             : Storage::disk(config('showcase-testimonials.disk'))->url($this->{$field});
     }
-
 }
