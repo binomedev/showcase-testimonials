@@ -1,8 +1,8 @@
 {
-    "name": "binomdev/showcase-testimonials",
+    "name": "binomedev/showcase-testimonials",
     "description": "A basic package to manage and showcase testimonials.",
     "keywords": [
-        "binomdev",
+        "binomedev",
         "showcase-testimonials"
     ],
     "homepage": "https://github.com/binomdev/showcase-testimonials",
@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Binomdev\\ShowcaseTestimonials\\": "src",
-            "Binomdev\\ShowcaseTestimonials\\Database\\Factories\\": "database/factories"
+            "Binomedev\\ShowcaseTestimonials\\": "src",
+            "Binomedev\\ShowcaseTestimonials\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Binomdev\\ShowcaseTestimonials\\Tests\\": "tests"
+            "Binomedev\\ShowcaseTestimonials\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Binomdev\\ShowcaseTestimonials\\ShowcaseTestimonialsServiceProvider"
+                "Binomedev\\ShowcaseTestimonials\\ShowcaseTestimonialsServiceProvider"
             ],
             "aliases": {
-                "ShowcaseTestimonials": "Binomdev\\ShowcaseTestimonials\\ShowcaseTestimonialsFacade"
+                "ShowcaseTestimonials": "Binomedev\\ShowcaseTestimonials\\ShowcaseTestimonialsFacade"
             }
         }
     },
