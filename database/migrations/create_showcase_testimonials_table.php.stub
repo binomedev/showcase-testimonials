@@ -6,14 +6,9 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateShowcaseTestimonialsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::create('testimonials', function (Blueprint $table) {
+        Schema::create('showcase-testimonials_table', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('company')->nullable();
