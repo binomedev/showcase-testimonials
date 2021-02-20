@@ -2,7 +2,10 @@
 
 namespace Binomedev\ShowcaseTestimonials;
 
+
+use Binomedev\ShowcaseTestimonials\Nova\Testimonial;
 use Illuminate\Support\Facades\Blade;
+use Laravel\Nova\Nova;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -20,7 +23,6 @@ class ShowcaseTestimonialsServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_showcase_testimonials_table')
-            //->hasCommand(ShowcaseTestimonialsCommand::class)
         ;
     }
 
@@ -30,5 +32,9 @@ class ShowcaseTestimonialsServiceProvider extends PackageServiceProvider
             'Binomedev\\ShowcaseTestimonials\\View\\Components',
             $this->package->shortName()
         );
+
+        Nova::resources([
+            Testimonial::class,
+        ]);
     }
 }

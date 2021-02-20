@@ -8,7 +8,7 @@ class CreateShowcaseTestimonialsTable extends Migration
 {
     public function up()
     {
-        Schema::create('showcase-testimonials_table', function (Blueprint $table) {
+        Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('company')->nullable();
