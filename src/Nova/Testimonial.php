@@ -34,7 +34,7 @@ class Testimonial extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'content', 'name'
+        'id', 'content', 'name',
     ];
 
     /**
@@ -59,7 +59,7 @@ class Testimonial extends Resource
             new Panel('Images', [
                 Image::make('Logo')->nullable(),
                 Image::make('Profile Picture')->nullable(),
-            ])
+            ]),
         ];
     }
 
