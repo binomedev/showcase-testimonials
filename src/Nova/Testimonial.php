@@ -3,6 +3,7 @@
 namespace Binomedev\ShowcaseTestimonials\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
@@ -59,7 +60,11 @@ class Testimonial extends Resource
             new Panel('Images', [
                 Image::make('Logo')->nullable(),
                 Image::make('Profile Picture')->nullable(),
-            ])
+            ]),
+
+            new Panel('Other', [
+                Code::make('Meta')->json()->nullable(),
+            ]),
         ];
     }
 

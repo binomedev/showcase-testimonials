@@ -17,6 +17,7 @@ class CreateShowcaseTestimonialsTable extends Migration
             $table->string('logo', 500)->nullable(); // Make it 500 in case it will be stored a SVG
             $table->string('profile_picture')->nullable();
             $table->string('url')->nullable();
+            $table->json('meta')->nullable();
             $table->timestamps();
         });
     }

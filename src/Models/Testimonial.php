@@ -4,6 +4,7 @@ namespace Binomedev\ShowcaseTestimonials\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Testimonial extends Model
 {
@@ -17,7 +18,10 @@ class Testimonial extends Model
         'company',
         'role',
         'profile_picture',
+        'meta',
     ];
+
+    protected $casts = ['meta' => 'array'];
 
     /**
      * @param string $field
