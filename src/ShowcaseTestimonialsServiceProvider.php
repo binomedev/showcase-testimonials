@@ -2,7 +2,6 @@
 
 namespace Binomedev\ShowcaseTestimonials;
 
-
 use Binomedev\ShowcaseTestimonials\Nova\Testimonial;
 use Illuminate\Support\Facades\Blade;
 use Laravel\Nova\Nova;
