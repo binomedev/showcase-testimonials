@@ -35,7 +35,7 @@ class Testimonial extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'content', 'name'
+        'id', 'content', 'name',
     ];
 
     /**
