@@ -2,6 +2,7 @@
 
 namespace Binomedev\ShowcaseTestimonials\Models;
 
+use Binomedev\ShowcaseTestimonials\Database\Factories\TestimonialFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
@@ -22,6 +23,11 @@ class Testimonial extends Model
     ];
 
     protected $casts = ['meta' => 'array'];
+
+    protected static function newFactory()
+    {
+        return new TestimonialFactory();
+    }
 
     /**
      * @param string $field
